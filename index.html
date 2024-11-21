@@ -33,8 +33,58 @@
                 <img src="./assets/icon/calendar.svg" alt="Icone de calendario">
                 <h2>Sobre o evento</h2>
               </legend>
-
               
+              <div class="input-wrapper">
+                <label for="title">Título</label>
+                <input type="text" 
+                placeholder="Nome do evento">
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper flex-1">
+                  <label for="title">Início</label>
+                  <input type="datetime-local" 
+                  placeholder="Nome do evento">
+                </div>
+                <div class="input-wrapper flex-1">
+                  <label for="title">Fim</label>
+                  <input type="datetime-local" 
+                  placeholder="Nome do evento">
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper flex-1">
+                  <label for="type">Tipo</label>
+                  <div class="segment-control">
+
+                    <input type="radio" id="option1" name="segment" checked>
+                    <label for="option1">
+                      <span id="building"></span>
+                      Presencial
+                    </label>
+            
+                    <input   type="radio" id="option2" name="segment">
+                    <label for="option2">
+                      <span id="video"></span>
+                      Online
+                    </label>
+                  </div>
+                </div>
+                <div class="input-wrapper flex-1">
+                  <label for="local">Local</label>
+                  <input type="text" 
+                  placeholder="Link ou endereço">
+                </div>
+              </div>
+              <div class="textarea-wrapper">
+                <label for="description">Descrição</label>
+                <textarea 
+                id="description"
+                name="description"
+                placeholder="Escreva sobre os detalhes do evento">
+                </textarea>
+              </div>
             </fieldset>
 
           </form>
