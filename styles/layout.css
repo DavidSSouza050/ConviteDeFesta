@@ -3,6 +3,7 @@
   grid-template-columns: 40.75% 59.25%;
   height: 100vh;
   overflow: hidden;
+  
   background-color: var(--shape-background);
 }
 
@@ -42,6 +43,7 @@ main{
   overflow: auto;
   padding-top: 4rem;
   padding-right: 4rem;
+  padding-bottom: 10.8rem;
 
   & .main-container{
     padding: 5rem;

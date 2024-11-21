@@ -58,13 +58,14 @@
                   <label for="type">Tipo</label>
                   <div class="segment-control">
 
-                    <input type="radio" id="option1" name="segment" checked>
+                    <input type="radio" id="option1" name="segment" value="in-person"
+                    id="in-person" checked>
                     <label for="option1">
                       <span id="building"></span>
                       Presencial
                     </label>
             
-                    <input   type="radio" id="option2" name="segment">
+                    <input   type="radio" id="option2" value="video" id="video" name="segment">
                     <label for="option2">
                       <span id="video"></span>
                       Online
@@ -82,11 +83,148 @@
                 <textarea 
                 id="description"
                 name="description"
-                placeholder="Escreva sobre os detalhes do evento">
-                </textarea>
+                placeholder="Escreva sobre os detalhes do evento"></textarea>
               </div>
             </fieldset>
+            
+            <fieldset class="customization">
+              <legend>
+                <img src="./assets/icon/paintbrush-vertical.svg" alt="ícone de pincel">
+                <h2>Personalização</h2>
+              </legend>
 
+              <div class="input-wrapper">
+                <label for="">Cor principal</label>
+                
+                <div class="radio-wrapper">
+                  <div class="radio-color-inner">
+                    <input type="radio" class="bg-color" name="color" value="light-blue" id="light-blue">
+                  </div>
+
+                  <div class="radio-color-inner">
+                    <input type="radio" class="bg-color" name="color" value="navy" id="navy">
+                  </div>
+
+                  <div class="radio-color-inner">
+                    <input type="radio" class="bg-color" name="color" value="purple" id="purple">
+                  </div>
+                  
+                  <div class="radio-color-inner">
+                    <input type="radio" class="bg-color" name="color" value="fuschia" id="fuschia">
+                  </div>
+
+                  <div class="radio-color-inner">
+                    <input type="radio" class="bg-color" name="color" value="pink" id="pink">
+                  </div>
+
+                  <div class="radio-color-inner">
+                    <input type="radio" class="bg-color" name="color" value="red" id="red">
+                  </div>
+
+                  <div class="radio-color-inner">
+                    <input type="radio" class="bg-color" name="color" value="orange" id="orange">
+                  </div>
+
+                  <div class="radio-color-inner">
+                    <input type="radio" class="bg-color" name="color" value="yellow" id="yellow">
+                  </div>
+
+                  <div class="radio-color-inner">
+                    <input type="radio" class="bg-color" name="color" value="lime" id="lime">
+                  </div>
+
+                  <div class="radio-color-inner">
+                    <input type="radio" class="bg-color" name="color" value="green" id="green">
+                  </div>
+
+                  <div class="radio-color-inner">
+                    <input type="radio" class="bg-color" name="color" value="cyan" id="cyan">
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="input-wrapper marginTop">
+                <label>Tema do evento</label>
+
+                <div class="radio-wrapper">
+
+                  <div class="radio-event-theme-inner">
+                    <input type="radio" name="event-theme" value="birthday" id="birthday">
+                    <img src="./assets/images-radio/Image.png" alt="Foto representativa de um aniversário">
+                    <label for="birthday">Aniversário</label>
+                  </div>
+
+                  <div class="radio-event-theme-inner">
+                    <input type="radio" name="event-theme" value="children" id="children">
+                    <img src="./assets/images-radio/Image-1.png" alt="Foto representativa de uma festa para crianças">
+                    <label for="children">Infantil</label>
+                  </div>
+
+                  <div class="radio-event-theme-inner">
+                    <input type="radio" name="event-theme" value="graduation" id="graduation">
+                    <img src="./assets/images-radio/Image-2.png" alt="Foto representativa de duas alianças">
+                    <label for="graduation">Formatura</label>
+                  </div>
+
+                  <div class="radio-event-theme-inner">
+                    <input type="radio" name="event-theme" value="marriage" id="marriage">
+                    <img src="./assets/images-radio/Image-3.png" alt="Foto representativa de duas alianças">
+                    <label for="marriage">Casamento</label>
+                  </div>
+
+                  <div class="radio-event-theme-inner">
+                    <input type="radio" name="event-theme" value="Baby-shower" id="Baby-shower">
+                    <img src="./assets/images-radio/Image-4.png" alt="Foto representativa com flores e lenço humidecido para bebes">
+                    <label for="Baby-shower">Chá de bebê</label>
+                  </div>
+
+                  <div class="radio-event-theme-inner">
+                    <input type="radio" name="event-theme" value="Kitchen-shower" id="Kitchen-shower">
+                    <img src="./assets/images-radio/Image-5.png" alt="Foto representativa de um cozinha">
+                    <label for="Kitchen-shower">Chá de panela</label>
+                  </div>
+
+                  <div class="radio-event-theme-inner">
+                    <input type="radio" name="event-theme" value="carnival" id="carnival">
+                    <img src="./assets/images-radio/Image-6.png" alt="Foto representativa de um fitas coloridas">
+                    <label for="carnival">Carnaval</label>
+                  </div>
+
+                  <div class="radio-event-theme-inner">
+                    <input type="radio" name="event-theme" value="Easter" id="Easter">
+                    <img src="./assets/images-radio/Image-7.png" alt="Foto representativa de um ovo pintado de azul com cara de coelho">
+                    <label for="Easter">Páscoa</label>
+                  </div>
+
+                  <div class="radio-event-theme-inner">
+                    <input type="radio" name="event-theme" value="Saint-John" id="Saint-John">
+                    <img src="./assets/images-radio/Image-8.png" alt="Foto representativa de bandeiras coloridas pinduradas">
+                    <label for="Saint-John">São João</label>
+                  </div>
+
+                  <div class="radio-event-theme-inner">
+                    <input type="radio" name="event-theme" value="Hellowen" id="Hellowen">
+                    <img src="./assets/images-radio/Image-9.png" alt="Foto representativa de aboboras cortadas com rostos medonhos">
+                    <label for="Hellowen">Hellowen</label>
+                  </div>
+
+                  <div class="radio-event-theme-inner">
+                    <input type="radio" name="event-theme" value="Christmas" id="Christmas">
+                    <img src="./assets/images-radio/Image-10.png" alt="Foto representativa de presentes de natal">
+                    <label for="Christmas">Natal</label>
+                  </div>
+                  <div class="radio-event-theme-inner">
+                    <input type="radio" name="event-theme" value="others" id="others">
+                    <img src="./assets/images-radio/Image-11.png" alt="Foto representativa de um aniversário">
+                    <label for="others">outros</label>
+
+                </div>
+              </div>
+
+
+            </fieldset>
           </form>
         </div>
       </div>
