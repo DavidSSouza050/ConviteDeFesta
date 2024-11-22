@@ -1,0 +1,38 @@
+
+.choose-file-container{
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  color: var(--input-placeholder);
+  position: relative;
+  margin-top: .5rem;
+
+  & input{
+    all: unset;
+    opacity: 0;
+    inset: 0;
+    z-index: 0;
+    position: absolute;
+    pointer-events: auto; 
+  };
+
+  & label{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .7rem;
+    background-color: var(--shape-button);
+    border-radius: .5rem;
+    
+    z-index: 1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  & label:hover{
+    background-color: var(--shape-hover);
+  }
+
+
+  
+}

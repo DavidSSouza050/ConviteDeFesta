@@ -1,0 +1,64 @@
+
+.toggle-container {
+  gap: .8rem;
+  padding-top: .8rem;
+  & label{
+    top: -3px;
+  }
+  
+}
+
+.toggle-inner {
+  display: inline-block;
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  background-color: var(--input-base);
+  outline: 1px solid var(--input-stroke);
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+
+.toggle-label::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--input-stroke);
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggle-input:checked + .toggle-label {
+  background-color: var(--brand-light);
+}
+
+.toggle-input:checked + .toggle-label::after {
+  transform: translateX(32px);
+  background-color: white;
+}
+
+
+/* Classes para controle */
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
