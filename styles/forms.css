@@ -8,6 +8,11 @@ fieldset{
   display: grid;
 }
 
+.personal-data{
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--input-stroke);
+}
+
 legend{
   display: flex;
   font: var(--text-heading-sm);

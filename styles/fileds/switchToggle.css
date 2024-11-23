@@ -1,7 +1,9 @@
 
 .toggle-container {
   gap: .8rem;
-  padding-top: .8rem;
+  margin-top: 1rem;
+  padding-top: .5rem;
+
   & label{
     top: -3px;
   }

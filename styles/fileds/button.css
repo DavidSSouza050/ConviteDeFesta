@@ -1,0 +1,18 @@
+button{
+  all: unset;
+
+  font-weight: 500;
+  cursor: pointer;
+  padding: .75rem 1.5rem;
+  border-radius: .5rem;
+  background-color: var(--brand-dark);
+
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+
+  margin-left: auto;
+  &:hover, &:focus{
+    background-color: var(--brand-mid);
+  }
+}

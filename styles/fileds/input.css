@@ -1,13 +1,12 @@
 
-
 input, textarea{
   appearance: none;
   width: 100%;
   border-radius: .5rem;
   border: 1px solid transparent;
   outline: 1px solid var(--input-stroke);
-  color: #fff;
-  margin-block: .7rem;
+  color: var(--text-boby);
+  margin-block: .5rem;
 
   background-color: var(--input-base);
 
@@ -27,10 +26,6 @@ label{
 
  display: block;
  margin-block: .25rem;
-}
-
-.flex{
-  gap: 1.25rem
 }
 
 input:focus, select:focus, textarea:focus, input[type="datetime-local"]:focus-within{
@@ -56,4 +51,47 @@ input[type="datetime-local"]{
 #description{
   height: 8rem;
   resize: none;
+}
+
+
+input {
+
+  &[disabled]{
+    background-color: var(--input-base);
+    border: 1px solid transparent;
+    outline: 1px solid var(--input-stroke);
+  }
+
+
+  &:invalid {
+    border: 0.125rem solid var(--danger);
+    outline: none;
+  }
+
+  &[required] + .error{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--danger);
+    margin-bottom: .5rem;
+
+    & svg {
+      width: 1.3rem;
+      height: 1.3rem;
+     & path{
+        fill: var(--danger);
+      }
+    } 
+  } 
+  
+  &:not(:focus):valid + .error{
+    display: none;
+  }
+
+}
+
+.actions-wrapper{
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
 }
